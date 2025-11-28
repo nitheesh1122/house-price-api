@@ -1,8 +1,6 @@
-fastapi
-uvicorn
-gradio
+fastapi==0.110.0
+uvicorn[standard]
+gradio==4.12.0
 joblib
 scikit-learn
 pydantic
-gradio
-uvicorn[standard]
