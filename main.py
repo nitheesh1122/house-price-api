@@ -4,7 +4,7 @@ from typing import Optional
 import joblib
 import gradio as gr
 
-# Load Model
+# Load ML model
 model = joblib.load("house_model.pkl")
 
 # FastAPI app
@@ -49,7 +49,6 @@ gradio_app = gr.Interface(
     description="Enter house details to get a price prediction"
 )
 
-# Mount Gradio properly (new method)
 app = gr.mount_gradio_app(app, gradio_app, path="/gradio")
 
 # Run locally
